@@ -30,11 +30,11 @@
 ## Automatic (Via install script)
 1. Run the following command in your PS Terminal.
     ```powershell
-      irm https://raw.githubusercontent.com/Kiruyuto/hooks-collection/master/install-hooks.ps1 | iex
+    irm https://raw.githubusercontent.com/Kiruyuto/hooks-collection/master/install-hooks.ps1 | iex
     ```
     ... or use shorter version:
     ```powershell
-      irm https://www.kiru.dev/api/install-hooks | iex
+    irm https://www.kiru.dev/api/install-hooks | iex
     ```
 
 
