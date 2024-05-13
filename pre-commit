@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Runs dotnet format against .CS CSFILES that are being staged for commit
+CSFILES=$(git diff --cached --name-only --diff-filter=ACM "*.cs")
+if [ -n "$CSFILES" ]
+then
+	dotnet format --severity info --include "$CSFILES" -v diag
+	echo "$CSFILES" | xargs git add
+fi
