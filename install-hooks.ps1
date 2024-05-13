@@ -106,5 +106,3 @@ else {
     Write-Host "[$($lookForDirName)] directory not found in the current directory." -ForegroundColor Red
     Write-Host "Change the path and try again.." -ForegroundColor Red
 }
-
-
