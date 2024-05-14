@@ -74,7 +74,7 @@ if ($hooksDirectory) {
                 }
                 { $_ -in @("a", "all") } {
                     foreach ($str in @("pre-commit", "commit-msg")) {
-                        $url = "$($baseUri)/pre-commit"
+                        $url = "$($baseUri)/$($str)"
                         Invoke-WebRequest -Uri $url -OutFile "$($hooksDirectory.FullName)\$($str)"
                         Write-Host "Successfully downloaded [$str] hook.."
                     }
